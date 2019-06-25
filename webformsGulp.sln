@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "webformsGulp", "webformsGulp\", "{5ACAE9F5-B675-4F1C-A917-7750CF8546B8}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55153"
+		Debug.AspNetCompiler.PhysicalPath = "webformsGulp\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55153\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55153"
+		Release.AspNetCompiler.PhysicalPath = "webformsGulp\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55153\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55153"
+		SlnRelativePath = "webformsGulp\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ACAE9F5-B675-4F1C-A917-7750CF8546B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACAE9F5-B675-4F1C-A917-7750CF8546B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA308AB1-6485-4245-955B-180B03B03A1A}
+	EndGlobalSection
+EndGlobal
