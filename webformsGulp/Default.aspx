@@ -7,7 +7,17 @@
         <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
-
+    <div class="row">
+        <div class="col-4">
+            <div class="icon-cross"></div>
+        </div>
+        <div class="col-4">
+            <div class="icon-next"></div>
+        </div>
+        <div class="col-4 ">
+            <div class="icon-prev"></div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-4">
             <h2>Getting started</h2>
