@@ -5,7 +5,8 @@ sourcemaps = require('gulp-sourcemaps'),
 stripCssComments = require('gulp-strip-css-comments'),
 prefix = require('gulp-autoprefixer')
 combineMq = require('gulp-combine-mq'),
-livereload = require('gulp-livereload'),
+    livereload = require('gulp-livereload'),
+    cleanCSS = require('gulp-clean-css');
 
 gulp.task('sprite', function () {
     var spriteData = gulp.src('Content/images/*.png')
@@ -29,9 +30,17 @@ gulp.task('sass', function () {
   .pipe(gulp.dest('./Content/build')) // Send The Files To The Destination
   .pipe(livereload()) // Reload Page When Save Files
 });
+gulp.task('minify-css', () => {
+    return gulp.src('Content/build/*.css')
+        .pipe(sourcemaps.init())
+        .pipe(cleanCSS())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('./Content/build'));
+});
 
 //les tache par default qui se lance avec la commande "gulp"
-gulp.task('default', ['sprite','sass'], function () {
-    gulp.watch('Content/images/*.png', ['sprite']);
+gulp.task('default', ['sprite', 'sass', 'minify-css'], function () {
+    gulp.watch('Content/images/*.png', ['sprite']);    
     gulp.watch('Content/*.scss', ['sass']);
+    gulp.watch('Content/build/*.css', ['minify-css']);
 });
